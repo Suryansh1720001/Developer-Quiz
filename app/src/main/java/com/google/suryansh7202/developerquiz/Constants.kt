@@ -169,29 +169,29 @@ object Constants {
 
 
         val que15 = Question(
-            15,"Which of the following correctly declares an array in C++?",
+            15,"What feature of OOP has a super-class sub-class concept?",
             R.drawable.java1,
-            "array{10};","array array[10];","int array;","int array[10];",
+            "Hierarchical inheritance","Single inheritance","Multiple inheritances","Multilevel inheritance",
 
-            4
+            1
         )
         questionList.add(que15)
 
         val que16 = Question(
-            16,"Which provides runtime environment for java byte code to be executed?",
+            16,"Modulus operator (%) can be applied to which of these?",
             R.drawable.java1,
-            "array{10};","array array[10];","int array;","int array[10];",
+            "Integers","Floating - point numbers","Both A and B","None of These",
 
-            4
+            3
         )
         questionList.add(que16)
 
         val que17 = Question(
-            17,"Which provides runtime environment for java byte code to be executed?",
+            17,"Which of these is not a bitwise operator?",
             R.drawable.java1,
-            "JVM","JDK","JRE","JAVAC",
+            "&' Operator","&=' Operator","|=' Operator","<=' Operator",
 
-            1
+            4
         )
         questionList.add(que17)
 

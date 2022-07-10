@@ -41,7 +41,7 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
     private var maxQuestion : Int = 10
     private var sendCurrentPosition:Int = 0
     private var mSelected_Quiz: String? =null
-//    private var Selected_Quiz:TextView?=null
+    private var Selected_Quiz:TextView?=null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,19 +54,16 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
         sendCurrentPosition = mCurrentPosition
 
 
-//        Selected_Quiz = findViewById(R.id.selectedQuiz)
-//
-//        Selected_Quiz?.setText("C++")
-
-//        Toast.makeText(this,"$Selected_Quiz",Toast.LENGTH_LONG).show()
-
-//        Selected_Quiz?.setText(mSelected_Quiz)
-
-
-
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
+
+
+
+
+        Selected_Quiz = findViewById(R.id.selectedQuiz)
+        Selected_Quiz?.setText(mSelected_Quiz + " Quiz")
+
+
 
 
 
@@ -80,8 +77,48 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
         tvOptionFour = findViewById(R.id.tv_option_four)
         btnSubmit = findViewById(R.id.btn_submit)
         mQuestionsList = Constants.getQuestions()
+        TimeRemaning(findViewById<TextView>(R.id.tv_timecount))
         setQuestion()
 
+    }
+
+
+    private fun TimeRemaning(mTextFieldsec: TextView) {
+        object : CountDownTimer(5000, 1000) {
+            @SuppressLint("SetTextI18n")
+            override fun onTick(millisUntilFinished: Long) {
+                // TODO do this later in minutes and seconds both
+
+                mTextFieldsec.text = "Time Remaining (sec) : " +(millisUntilFinished / (1000))
+
+            }
+
+            override fun onFinish() {
+                timeFinish()
+            }
+
+        }.start()
+
+    }
+
+
+    private fun timeFinish(){
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra(Constants.USER_NAME,mUserName)
+        intent.putExtra(Constants.CORRECT_ANSWER,mCorrectAnswers)
+        intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)
+        intent.putExtra(Constants.NOT_SELECTED,mNotSelected)
+        intent.putExtra(Constants.TOTAL_QUESTIONS,progressBar?.max)
+        intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
+
+        // array list
+        intent.putParcelableArrayListExtra(
+            "QuestionsExtra",
+            questionSelectedOptions as ArrayList<out Parcelable?>?
+        )
+        intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
+        startActivity(intent)
+        finish()
     }
 
 
@@ -180,7 +217,8 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
                     intent.putExtra(Constants.CORRECT_ANSWER,mCorrectAnswers)
                     intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)
                     intent.putExtra(Constants.NOT_SELECTED,mNotSelected)
-                    intent.putExtra(Constants.Progress_Bar_Position,progressBarPosition)
+                    intent.putExtra(Constants.TOTAL_QUESTIONS,progressBar?.max)
+                    intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
                     // array list
                     intent.putParcelableArrayListExtra(
                         "QuestionsExtra",

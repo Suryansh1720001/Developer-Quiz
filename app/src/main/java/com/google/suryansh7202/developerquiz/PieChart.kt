@@ -2,7 +2,6 @@ package com.google.suryansh7202.developerquiz
 
 import android.content.Intent
 import android.graphics.Color
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Parcelable
@@ -20,10 +19,11 @@ class PieChart : AppCompatActivity() {
     var wrongAnswer: TextView? = null
     var notSelected: TextView? = null
 
-    private var mCurrentPosition: Int =1
+    private var CurrentPosition: Int =1
     var pieChart: PieChart? = null
     private var mQuestionsList: ArrayList<Question>? =null
-    val mquestionSelectedOptions =  ArrayList<Int>()
+//    val mquestionSelectedOptions =  arrayList<Int>()
+    var mquestionSelectedOptions =  ArrayList<Int>()
 
     private var maxQuestion : Int = 10
     private var progressBarPosition =0
@@ -36,29 +36,52 @@ class PieChart : AppCompatActivity() {
     private var Anaysis: TextView? = null
     private var Solution: TextView? = null
 
+    private var extraNotSelectedby_timelimit: Int = 0
+    private var not: Int = 0
+    private var mSelected_Quiz: String? =null
+    private var tvResult :TextView?=null
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pie_chart)
-        val questionSelectedOptions = intent.getSerializableExtra("QuestionsExtra") as ArrayList<*>?
+        val questionSelectedOptions = intent.getSerializableExtra("QuestionsExtra") as ArrayList<Int>?
         sendCurrentPosition = intent.getIntExtra(Constants.Send_Current_Position, 0)
+        mSelected_Quiz = intent.getStringExtra(Constants.SELECTED_QUIZ)
         mCorrectAnswers = intent.getIntExtra(Constants.CORRECT_ANSWER, 0)
         mWrongAnswer = intent.getIntExtra(Constants.WRONG_ANSWER, 0)
         mNotSelected = intent.getIntExtra(Constants.NOT_SELECTED, 0)
         maxQuestion = sendCurrentPosition
+        tvResult = findViewById(R.id.tv_result)
+
+        tvResult?.text = mSelected_Quiz
+        mquestionSelectedOptions.addAll(questionSelectedOptions!!)
+
+
+        for( i in (mquestionSelectedOptions.size+1)..10 ){
+            mquestionSelectedOptions.add(0)
+        }
+
+
+
+
+
+        for(i in mquestionSelectedOptions){
+            if(i==0){
+                extraNotSelectedby_timelimit++
+            }
+        }
+
+        mNotSelected = extraNotSelectedby_timelimit
+
+
 
         Anaysis = findViewById(R.id.Analysis)
         Solution = findViewById(R.id.Solution)
 
-        Anaysis?.setTextColor(Color.parseColor("#363A43"))
-        Anaysis?.background = ContextCompat.getDrawable(
-            this,
-            R.drawable.selected_result_option
 
-        )
-
+        setButtonColour(Anaysis)
 
         Solution?.setOnClickListener{
             Anaysis?.setTextColor(Color.parseColor("#7A8089"))
@@ -82,11 +105,13 @@ class PieChart : AppCompatActivity() {
             )
 
             intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
-            Toast.makeText(this,"$sendCurrentPosition",Toast.LENGTH_LONG).show()
+//            Toast.makeText(this,"$sendCurrentPosition",Toast.LENGTH_LONG).show()
 
             intent.putExtra(Constants.CORRECT_ANSWER,mCorrectAnswers)
             intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)
             intent.putExtra(Constants.NOT_SELECTED,mNotSelected)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
+
 
 //            intent.putExtra(Constants.CORRECT_ANSWER,CorrectAns)
 //            intent.putExtra(Constants.WRONG_ANSWER,WrongAns)
@@ -98,12 +123,6 @@ finish()
 
 
     }
-
-
-
-
-
-
 
 
 
@@ -124,8 +143,8 @@ finish()
         mQuestionsList = Constants.getQuestions()
 
 
-        Toast.makeText(this,"Correct ans = $mCorrectAnswers",Toast.LENGTH_LONG).show()
-        Toast.makeText(this,"wrong ans = $mWrongAnswer",Toast.LENGTH_LONG).show()
+//        Toast.makeText(this,"Correct ans = $mCorrectAnswers",Toast.LENGTH_LONG).show()
+//        Toast.makeText(this,"wrong ans = $mWrongAnswer",Toast.LENGTH_LONG).show()
         Toast.makeText(this,"not selected ans = $mNotSelected",Toast.LENGTH_LONG).show()
 
 
@@ -135,9 +154,20 @@ finish()
 
         // Creating a method setData()
         // to set the text in text view and pie chart
-        Toast.makeText(this,"$questionSelectedOptions",Toast.LENGTH_LONG).show()
+//        Toast.makeText(this,"$questionSelectedOptions",Toast.LENGTH_LONG).show()
         setData();
     }
+
+    private fun setButtonColour(Analysis: TextView?) {
+
+        Analysis?.setTextColor(Color.parseColor("#363A43"))
+        Analysis?.background = ContextCompat.getDrawable(
+            this,
+            R.drawable.selected_result_option
+
+        )
+    }
+
 
     private fun setData() {
 

@@ -23,10 +23,11 @@ class Solution : AppCompatActivity() {
     private var mCurrentPosition:Int =1
 
     val mquestionSelectedOptions =  ArrayList<Int>()
+
     private var tv_AcutalCorrectAnswer: TextView? = null
     private var tv_YourAnswer: TextView? = null
 
-    private var Anaysis: TextView? = null
+    private var Analysis: TextView? = null
     private var Solution: TextView? = null
 
 
@@ -35,6 +36,9 @@ class Solution : AppCompatActivity() {
     private var mNotSelected: Int = 0
 
 
+    private var mSelected_Quiz: String? =null
+
+    private var tvResult :TextView?=null
 
 
 
@@ -43,6 +47,7 @@ class Solution : AppCompatActivity() {
         setContentView(R.layout.activity_solution)
         mQuestionsList = Constants.getQuestions()
         mCurrentPosition= intent.getIntExtra(Constants.Send_Current_Position, 0)
+        mSelected_Quiz = intent.getStringExtra(Constants.SELECTED_QUIZ)
         val questionSelectedOptions = intent.getSerializableExtra("QuestionsExtra") as ArrayList<Int>?
         mCorrectAnswers = intent.getIntExtra(Constants.CORRECT_ANSWER, 0)
         mWrongAnswer = intent.getIntExtra(Constants.WRONG_ANSWER, 0)
@@ -51,8 +56,16 @@ class Solution : AppCompatActivity() {
         tvQuestion = findViewById(R.id.tv_question)
         progressBar =findViewById(R.id.ResultprogressBar)
         tvProgress = findViewById(R.id.tv_Resultprogress)
+        tvResult = findViewById(R.id.tv_result)
+        tvResult?.text = mSelected_Quiz
 
         mquestionSelectedOptions.addAll(questionSelectedOptions!!)
+
+
+        for( i in (mquestionSelectedOptions.size+1)..10 ){
+            mquestionSelectedOptions.add(0)
+        }
+
 
 
         val next = findViewById<ImageView>(R.id.btn_next)
@@ -60,20 +73,14 @@ class Solution : AppCompatActivity() {
 
 
 
-        Anaysis = findViewById(R.id.Analysis)
+        Analysis = findViewById(R.id.Analysis)
         Solution = findViewById(R.id.Solution)
 
-        Solution?.setTextColor(Color.parseColor("#363A43"))
-        Solution?.background = ContextCompat.getDrawable(
-            this,
-            R.drawable.selected_result_option
-
-        )
 
 
+        setButtonColour(Solution)
 
-
-        Anaysis?.setOnClickListener{
+        Analysis?.setOnClickListener{
             Solution?.setTextColor(Color.parseColor("#7A8089"))
             Solution?.background = ContextCompat.getDrawable(
                 this,
@@ -81,8 +88,8 @@ class Solution : AppCompatActivity() {
 
             )
 
-           Anaysis?.setTextColor(Color.parseColor("#363A43"))
-            Anaysis?.background = ContextCompat.getDrawable(
+           Analysis?.setTextColor(Color.parseColor("#363A43"))
+            Analysis?.background = ContextCompat.getDrawable(
                 this,
                 R.drawable.selected_result_option
             )
@@ -100,6 +107,8 @@ class Solution : AppCompatActivity() {
             intent.putExtra(Constants.CORRECT_ANSWER,mCorrectAnswers)
             intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)
             intent.putExtra(Constants.NOT_SELECTED,mNotSelected)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
+
 
 //            intent.putExtra(Constants.CORRECT_ANSWER,CorrectAns)
 //            intent.putExtra(Constants.WRONG_ANSWER,WrongAns)
@@ -180,6 +189,18 @@ class Solution : AppCompatActivity() {
 
 
 
+
+    }
+
+
+    private fun setButtonColour(Solution: TextView?) {
+
+        Solution?.setTextColor(Color.parseColor("#363A43"))
+        Solution?.background = ContextCompat.getDrawable(
+            this,
+            R.drawable.selected_result_option
+
+        )
 
     }
 
