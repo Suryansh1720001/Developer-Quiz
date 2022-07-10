@@ -7,11 +7,14 @@ import android.os.Parcelable
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
+import android.widget.Toast
 
 
- class TopicQuizName : AppCompatActivity() {
+
+class TopicQuizName : AppCompatActivity() {
     private var mUserName: String? =null
     private var UserName: TextView? =null
+    private var mSelected_Quiz: String? =null
 //    private var Cplusplus : ImageView?= null
     private var java : ImageView?= null
      private var mCurrentPosition: Int =1
@@ -26,16 +29,21 @@ import android.widget.TextView
         setContentView(R.layout.activity_topic_quiz_name)
 
         UserName = findViewById(R.id.UserName)
-        UserName?.setText("Hello, "+mUserName +" \uD83E\uDD20")
+        UserName?.setText("Hello, "+mUserName)
 
        val  Cplusplus = findViewById<ImageView>(R.id.iv_cplusplus)
       val  java = findViewById<ImageView>(R.id.iv_java)
 
         Cplusplus.setOnClickListener {
             mCurrentPosition =1
+            mSelected_Quiz = "C++"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
             intent.putExtra(Constants.USER_NAME, mUserName)
             intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
+//            Toast.makeText(this,"${mSelected_Quiz.toString()}",Toast.LENGTH_LONG).show()
+
+
 
             startActivity(intent)
             finish()
@@ -44,9 +52,14 @@ import android.widget.TextView
 
         java.setOnClickListener {
             mCurrentPosition=11
+            mSelected_Quiz = "Java"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
             intent.putExtra(Constants.USER_NAME, mUserName)
             intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
+//            Toast.makeText(this,"${mSelected_Quiz.toString()}", Toast.LENGTH_LONG).show()
+
+
 
             startActivity(intent)
             finish()

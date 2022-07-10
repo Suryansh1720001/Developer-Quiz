@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class ResultActivity : AppCompatActivity() {
+    private var sendCurrentPosition:Int = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -26,6 +28,8 @@ class ResultActivity : AppCompatActivity() {
         val wish = findViewById<TextView>(R.id.wish_congratulation)
         val resultAnaysis = findViewById<Button>(R.id.btn_result_analysis)
         val questionSelectedOptions = intent.getSerializableExtra("QuestionsExtra") as ArrayList<*>?
+        sendCurrentPosition = intent.getIntExtra(Constants.Send_Current_Position,0)
+
 
 
         // animation in finish button
@@ -40,6 +44,8 @@ class ResultActivity : AppCompatActivity() {
         tvName.text = intent.getStringExtra(Constants.USER_NAME)
 
         val CorrectAns = intent.getIntExtra(Constants.CORRECT_ANSWER,0)
+        val WrongAns = intent.getIntExtra(Constants.WRONG_ANSWER,0)
+        val NotSelected = intent.getIntExtra(Constants.NOT_SELECTED,0)
         val TotalQuestion = intent.getIntExtra(Constants.Progress_Bar_Position,0)
 
 
@@ -90,11 +96,16 @@ class ResultActivity : AppCompatActivity() {
 
 
         resultAnaysis.setOnClickListener{
-            val intent = Intent(this,ResultAnalysis::class.java)
+            val intent = Intent(this,PieChart::class.java)
             intent.putParcelableArrayListExtra(
                 "QuestionsExtra",
                 questionSelectedOptions as ArrayList<out Parcelable?>?
             )
+            intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
+            intent.putExtra(Constants.CORRECT_ANSWER,CorrectAns)
+            intent.putExtra(Constants.WRONG_ANSWER,WrongAns)
+            intent.putExtra(Constants.NOT_SELECTED,NotSelected)
+
             startActivity(intent)
         }
 

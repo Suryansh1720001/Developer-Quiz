@@ -8,9 +8,13 @@ object Constants {
     const val USER_NAME: String = "user_name"
     const val TOTAL_QUESTIONS: String = "total_questions"
     const val CORRECT_ANSWER:String = "correct_answer"
+    const val WRONG_ANSWER:String = "wrong_answer"
+    const val NOT_SELECTED:String = "not_selected"
     const val QUESTION_CORRECT_OPTION: String = "question_correct_answer"
     const val CURRENT_POSITION: String = "mCurrentPosition"
     const val Progress_Bar_Position: String = "progressBarPosition"
+    const val Send_Current_Position: String = "sendCurrentPosition"
+    const val SELECTED_QUIZ: String = "selected_quiz"
 
 
     fun getQuestions():ArrayList<Question>{

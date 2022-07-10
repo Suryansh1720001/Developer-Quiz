@@ -14,6 +14,12 @@
         android:theme="@style/Theme.DeveloperQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".Solution"
+            android:exported="false" />
+        <activity
+            android:name=".PieChart"
+            android:exported="false" />
+        <activity
             android:name=".TopicQuizName"
             android:exported="false" />
         <activity

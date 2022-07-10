@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.*
 import androidx.core.content.ContextCompat
+import org.w3c.dom.Text
 
 import kotlin.system.exitProcess
 
@@ -19,6 +20,9 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 
     private var mUserName: String? =null
     private var mCorrectAnswers: Int = 0
+    private var mWrongAnswer: Int = 0
+    private var mNotSelected: Int = 0
+
     private var mCurrentPosition:Int =0
     private var mQuestionsList: ArrayList<Question>? =null
     private var mSelectedOptionPosition: Int =0
@@ -35,15 +39,36 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
     private var btnSubmit: Button?= null
     private var progressBarPosition =0
     private var maxQuestion : Int = 10
+    private var sendCurrentPosition:Int = 0
+    private var mSelected_Quiz: String? =null
+//    private var Selected_Quiz:TextView?=null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         mUserName = intent.getStringExtra(Constants.USER_NAME)
+        mSelected_Quiz = intent.getStringExtra(Constants.SELECTED_QUIZ)
+        Toast.makeText(this,"$mSelected_Quiz",Toast.LENGTH_LONG).show()
+
         mCurrentPosition = intent.getIntExtra(Constants.CURRENT_POSITION,0)
         maxQuestion = mCurrentPosition
+        sendCurrentPosition = mCurrentPosition
+
+
+//        Selected_Quiz = findViewById(R.id.selectedQuiz)
+//
+//        Selected_Quiz?.setText("C++")
+
+//        Toast.makeText(this,"$Selected_Quiz",Toast.LENGTH_LONG).show()
+
+//        Selected_Quiz?.setText(mSelected_Quiz)
+
+
 
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
+
+
 
         progressBar = findViewById(R.id.progressBar)
         tvProgress = findViewById(R.id.tv_progress)
@@ -137,10 +162,14 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 //                }
 
 
-                Toast.makeText(this,"$mCurrentPosition",Toast.LENGTH_LONG).show()
+//                Toast.makeText(this,"$mCurrentPosition",Toast.LENGTH_LONG).show()
                 val question = mQuestionsList?.get(mCurrentPosition - 1)
                     if (question!!.correctAnswer == mSelectedOptionPosition) {
                         mCorrectAnswers++
+                    }else if(mSelectedOptionPosition==0){
+                        mNotSelected++
+                    }else{
+                        mWrongAnswer++
                     }
                     questionSelectedOptions.add(mSelectedOptionPosition)
 
@@ -149,12 +178,16 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
                     val intent = Intent(this, ResultActivity::class.java)
                     intent.putExtra(Constants.USER_NAME,mUserName)
                     intent.putExtra(Constants.CORRECT_ANSWER,mCorrectAnswers)
+                    intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)
+                    intent.putExtra(Constants.NOT_SELECTED,mNotSelected)
                     intent.putExtra(Constants.Progress_Bar_Position,progressBarPosition)
                     // array list
                     intent.putParcelableArrayListExtra(
                         "QuestionsExtra",
                         questionSelectedOptions as ArrayList<out Parcelable?>?
                     )
+                    intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
+
                     startActivity(intent)
 
                     finish()
