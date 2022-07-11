@@ -35,6 +35,10 @@ class TopicQuizName : AppCompatActivity() {
       val  java = findViewById<ImageView>(R.id.iv_java)
         val python = findViewById<ImageView>(R.id.iv_python)
         val c = findViewById<ImageView>(R.id.iv_c)
+        val html = findViewById<ImageView>(R.id.iv_html)
+        val CSS = findViewById<ImageView>(R.id.iv_css)
+        val javascript = findViewById<ImageView>(R.id.iv_javascript)
+        val reactJS = findViewById<ImageView>(R.id.iv_reactjs)
 
         Cplusplus.setOnClickListener {
             mCurrentPosition =1
@@ -95,6 +99,67 @@ class TopicQuizName : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        html.setOnClickListener{
+            mCurrentPosition=41
+            mSelected_Quiz = "HTML"
+            val intent = Intent(this, QuizQuestionsActivity::class.java)
+            intent.putExtra(Constants.USER_NAME, mUserName)
+            intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
+
+
+            startActivity(intent)
+            finish()
+        }
+
+
+
+        CSS.setOnClickListener{
+            mCurrentPosition=51
+            mSelected_Quiz = "CSS"
+            val intent = Intent(this, QuizQuestionsActivity::class.java)
+            intent.putExtra(Constants.USER_NAME, mUserName)
+            intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
+
+
+            startActivity(intent)
+            finish()
+        }
+
+
+
+        javascript.setOnClickListener{
+            mCurrentPosition=61
+            mSelected_Quiz = "JavaScript"
+            val intent = Intent(this, QuizQuestionsActivity::class.java)
+            intent.putExtra(Constants.USER_NAME, mUserName)
+            intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
+
+
+            startActivity(intent)
+            finish()
+        }
+
+
+
+        reactJS.setOnClickListener{
+            mCurrentPosition=71
+            mSelected_Quiz = "React JS"
+            val intent = Intent(this, QuizQuestionsActivity::class.java)
+            intent.putExtra(Constants.USER_NAME, mUserName)
+            intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
+            intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
+
+
+            startActivity(intent)
+            finish()
+        }
+
+
+
 
 
 

@@ -478,8 +478,422 @@ object Constants {
 
 
 
+        //  HTML QUIZ
 
 
+        val que41 = Question(
+            41,"There are ___ levels of heading in HTML",
+            R.drawable.java1,
+            "Three","Four","Five","Six",
+
+            4
+        )
+        questionList.add(que41)
+
+
+        val que42 = Question(
+            42,"There are _____ level of heading in html",
+            R.drawable.java1,
+            "three","four","five","six",
+
+            4
+        )
+        questionList.add(que42)
+
+
+        val que43 = Question(
+            43,"The purpose of markup is to",
+            R.drawable.java1,
+            "add hypertext capabilities","enhance the document","both A & B","none of the above",
+
+            3
+        )
+        questionList.add(que43)
+
+
+        val que44 = Question(
+            44,"Which of the following is true? ",
+            R.drawable.java1,
+            "BR tag is used to have a blank line","In tables, the header cell is centred by default and the data cells are right-aligned","The <TR> is used to create a data cell","All of the above",
+
+            1
+        )
+        questionList.add(que44)
+
+
+
+
+        val que45 = Question(
+            45,"Which of the following tags do not require a terminator?",
+            R.drawable.java1,
+            "<u>","<br>","<b>","None of above",
+
+            2
+        )
+        questionList.add(que45)
+
+
+
+        val que46 = Question(
+            46,"For a particular font its size attribute can be an absolute value ranging form",
+            R.drawable.java1,
+            "1-10","1-9","1-8","1-7",
+
+            1
+        )
+        questionList.add(que46)
+
+
+        val que47 = Question(
+            47,"Which one of the following tags is used to insert graphics in the webpage",
+            R.drawable.java1,
+            "<image>","<images>","<img>","<imgs>",
+
+            3
+        )
+        questionList.add(que47)
+
+
+        val que48 = Question(
+            48,"html comment should be enclosed between",
+            R.drawable.java1,
+            "<!– and — >","<! And !>","<!— and –“”","none of the above",
+
+            1
+        )
+        questionList.add(que48)
+
+
+        val que49 = Question(
+            49,"The _____ element can be used to identify your html file to the outside world",
+            R.drawable.java1,
+            "title","body","head","None of these",
+
+            4
+        )
+        questionList.add(que49)
+
+
+
+        val que50 = Question(
+            50,"CGI stand for",
+            R.drawable.java1,
+            "Command Gate Interface","Common Gateway Interface","Common Gate input","None of the above",
+
+            2
+        )
+        questionList.add(que50)
+
+
+
+        // CSS QUIZ
+
+
+        val que51 = Question(
+            51, "If we want define style for an unique element, then which css selector will we use ?",
+            R.drawable.java1,
+            "Id","text","class","name",
+
+            1
+        )
+        questionList.add(que51)
+
+
+        val que52 = Question(
+            52,"If we don't want to allow a floating div to the left side of an element, which css property will we use ?",
+            R.drawable.java1,
+            "margin","clear","float","padding",
+
+            2
+        )
+        questionList.add(que52)
+
+        val que53 = Question(
+            53,"If we want to wrap a block of text around an image, which css property will we use ?",
+            R.drawable.java1,
+            "wrap","push","float","align",
+
+            3
+        )
+        questionList.add(que53)
+
+
+
+        val que54 = Question(
+            54,"If we want to show an Arrow as cursor, then which value we will use ?",
+            R.drawable.java1,
+            "pointer","default","arrow","arr",
+
+            2
+        )
+        questionList.add(que54)
+
+
+        val que55 = Question(
+            55,"Which of the following properties will we use to display border around a cell without any content ?",
+            R.drawable.java1,
+            "empty-cell","blank-cell","noncontent-cell","void-cell",
+
+            1
+        )
+        questionList.add(que55)
+
+
+        val que56 = Question(
+            56,"Which attribute can be added to many HTML / XHTML elements to identify them as a member of a specific group ?",
+            R.drawable.java1,
+            "Id","class","div","span",
+
+            2
+        )
+        questionList.add(que56)
+
+        val que57 = Question(
+            57,"Can we define the text direction via css property ?",
+            R.drawable.java1,
+            "Yes, we can","No, we can't","None","Nothing describe",
+
+            1
+        )
+        questionList.add(que57)
+
+        val que58 = Question(
+            58,"When we write <img src=\"img.png\">, what \"img.png\" inside double quote implies?",
+            R.drawable.java1,
+            "element","attribute","value","operator",
+
+            3
+        )
+        questionList.add(que58)
+
+        val que59 = Question(
+            59,"How can we write comment along with CSS code ?",
+            R.drawable.java1,
+            "/* a comment */","// a comment //","/ a comment /","<' a comment'>",
+
+            1
+        )
+        questionList.add(que59)
+
+        val que60 = Question(
+            60,"What should be the table width, so that the width of a table adjust to the current width of the browser window?",
+            R.drawable.java1,
+            "640 pixels","100%","full-screen","1024 px",
+
+            2
+        )
+        questionList.add(que60)
+
+
+        // JAVA SCRIPT QUIZ
+
+
+
+        val que61 = Question(
+            61," NaN stands for_________.",
+            R.drawable.java1,
+            "Nano","NanTech","Not  a number","New attactedNematic",
+
+            61
+        )
+        questionList.add(que61)
+
+
+        val que62 = Question(
+            62,"______ side java script statements embedded in  a HTML Page can respond to user events such as mouse-clicks, forms input and page navigation.",
+            R.drawable.java1,
+            "client","Server","Website","Live wire",
+
+            1
+        )
+        questionList.add(que62)
+
+        val que63 = Question(
+            63,"++ operator in Java Script is ____ Operator.",
+            R.drawable.java1,
+            "Unary","Positive","Increment","Addition",
+
+            1
+        )
+        questionList.add(que63)
+
+
+        val que64 = Question(
+            64,"A translator is described as ________ software.",
+            R.drawable.java1,
+            "Application"," System","Utility","Open Source",
+
+            2
+        )
+        questionList.add(que64)
+
+
+        val que65 = Question(
+            65,"Storing numbers, dates or other values are ______ used for in java script program.",
+            R.drawable.java1,
+            "String","Codes","Variables","Functions",
+
+            3
+        )
+        questionList.add(que65)
+
+
+
+        val que66 = Question(
+            66,"When a user views a page containing a java script program, which machine actually executes the script?",
+            R.drawable.java1,
+            "The user’s machine running offline","The user’s machine running  a web browser","The user’s machine running on a website","The users cookies used by a website",
+
+            2
+        )
+        questionList.add(que66)
+
+
+        val que67 = Question(
+            67,". _________attribute can hold the java script version.",
+            R.drawable.java1,
+            "var","language","script","type",
+
+            2
+        )
+        questionList.add(que67)
+
+        val que68 = Question(
+            68,"________side image maps can be used with java script.",
+            R.drawable.java1,
+            "client ","Server","Website","Live wire",
+
+            1
+        )
+        questionList.add(que68)
+
+
+        val que69 = Question(
+            69,"Java script is an ________scripting language.",
+            R.drawable.java1,
+            "object oriented","client oriented ","network oriented","server oriented",
+
+            1
+        )
+        questionList.add(que69)
+
+        val que70 = Question(
+            70," ____ tag can handle mouse events in Netscape",
+            R.drawable.java1,
+            "<a>","<onclick>","<net>","<control",
+
+            1
+        )
+        questionList.add(que70)
+
+
+        // REACT JS QUIZ
+
+        val que71 = Question(
+            71,"In React what is used to pass data to a component from outside?",
+            R.drawable.java1,
+            "setState","render with arguments","props","PropTypes",
+
+            3
+        )
+        questionList.add(que71)
+
+
+        val que72= Question(
+            72,"In which directory React Components are saved?",
+            R.drawable.java1,
+            "Inside js/components/","Inside vendor/components/","Inside external/components/","Inside vendor/",
+
+            1
+        )
+        questionList.add(que72)
+
+
+
+        val que73 = Question(
+            73,"At the highest level, React components have lifecycle events that fall into\n",
+            R.drawable.java1,
+            "Initialization","State/Property Updates","Destruction","All of these",
+
+            4
+        )
+        questionList.add(que73)
+
+
+
+        val que74 = Question(
+            74,"How many elements does a react component return?",
+            R.drawable.java1,
+            "2 Elements","2 Elements","Multiple Elements","None of These",
+            2
+        )
+        questionList.add(que74)
+
+
+
+        val que75 = Question(
+            75,"How do you write an inline style specifying the font-size:12px and color:red; in JSX",
+            R.drawable.java1,
+            "style={{font-size:12,color:'red'}}","style={{fontSize:'12px',color:'red'}}","style={fontSize:'12px',color:'red'}","style={{font-size:12px,color:'red'}}",
+
+            3
+        )
+        questionList.add(que75)
+
+
+
+        val que76 = Question(
+            76,"What is a good use case for using a function while rendering a dynamic list of items",
+            R.drawable.java1,
+            "If we need to compute a value based on properties of items in the loop.","None. Functions should not be used while rendering a dynamic list.","To make the code shorter",
+            "None of these",
+
+            1
+        )
+        questionList.add(que76)
+
+
+
+        val que77 = Question(
+            77,"Which of the following is correct syntax for a button click event handler, foo?",
+            R.drawable.java1,
+            "<button onclick=this.foo()>","<button onClick={this.foo()}>","<button onclick=this.foo>","<button onClick={foo}>",
+
+            3
+        )
+        questionList.add(que77)
+
+
+        val que78 = Question(
+            78,"Which method is not part of ReactDOM?",
+            R.drawable.java1,
+            "ReactDOM.destroy()","ReactDOM.hydrate()","ReactDOM.createPortal()","ReactDOM.findDOMNode()",
+
+            2
+        )
+        questionList.add(que78)
+
+
+        val que79 = Question(
+            79,"What is a controlled input element?",
+            R.drawable.java1,
+            "An input element with the controlled flag","An input element that is controlled by the value of another input element",
+            "An input element that can only accept a list of characters","An input element whose value is being controlled by a component’s state",
+
+            4
+        )
+        questionList.add(que79)
+
+
+        val que80 = Question(
+            80,"What is the second argument for setState useful for?",
+            R.drawable.java1,
+            "To invoke code after the setState operation is done","To replace the state completely instead of the default merge action",
+            "To access the previous state before the setState operation","None of the above",
+
+            1
+        )
+        questionList.add(que80)
 
 
 
