@@ -76,7 +76,7 @@
                     android:layout_weight="1"
 
                     android:contentDescription="java"
-                    app:srcCompat="@drawable/java1" />
+                    app:srcCompat="@drawable/java" />
 
 
             </LinearLayout>
