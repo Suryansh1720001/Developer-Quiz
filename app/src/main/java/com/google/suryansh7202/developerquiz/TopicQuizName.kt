@@ -15,11 +15,8 @@ class TopicQuizName : AppCompatActivity() {
     private var mUserName: String? =null
     private var UserName: TextView? =null
     private var mSelected_Quiz: String? =null
-//    private var Cplusplus : ImageView?= null
-    private var java : ImageView?= null
+
      private var mCurrentPosition: Int =1
-     private var progressBar: ProgressBar? =null
-     private var tvProgress: TextView?= null
 
 
 
@@ -47,7 +44,6 @@ class TopicQuizName : AppCompatActivity() {
             intent.putExtra(Constants.USER_NAME, mUserName)
             intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
-//            Toast.makeText(this,"${mSelected_Quiz.toString()}",Toast.LENGTH_LONG).show()
 
 
 
@@ -63,7 +59,6 @@ class TopicQuizName : AppCompatActivity() {
             intent.putExtra(Constants.USER_NAME, mUserName)
             intent.putExtra(Constants.CURRENT_POSITION,mCurrentPosition)
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz.toString())
-//            Toast.makeText(this,"${mSelected_Quiz.toString()}", Toast.LENGTH_LONG).show()
 
 
 

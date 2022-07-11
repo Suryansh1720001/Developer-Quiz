@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val btnStart: Button = findViewById(R.id.btnStart)
         val etname: EditText = findViewById(R.id.etname)
-//        val tvAppName: TextView = findViewById(R.id.tvAppName)
+
 
 //        tvAppName.alpha = 0f;
 //        tvAppName.translationY = 50f;

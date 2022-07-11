@@ -105,7 +105,6 @@ class Solution : AppCompatActivity() {
             )
 
             intent.putExtra(Constants.Send_Current_Position,mCurrentPosition)
-//            Toast.makeText(this,"$sendCurrentPosition", Toast.LENGTH_LONG).show()
 
             intent.putExtra(Constants.CORRECT_ANSWER,mCorrectAnswers)
             intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)

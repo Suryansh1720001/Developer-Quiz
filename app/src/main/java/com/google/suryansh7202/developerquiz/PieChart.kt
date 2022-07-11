@@ -19,14 +19,11 @@ class PieChart : AppCompatActivity() {
     var wrongAnswer: TextView? = null
     var notSelected: TextView? = null
 
-    private var CurrentPosition: Int =1
     var pieChart: PieChart? = null
     private var mQuestionsList: ArrayList<Question>? =null
-//    val mquestionSelectedOptions =  arrayList<Int>()
     var mquestionSelectedOptions =  ArrayList<Int>()
 
     private var maxQuestion : Int = 10
-    private var progressBarPosition =0
     private var sendCurrentPosition:Int = 0
 
     private var mCorrectAnswers: Int = 0
@@ -121,7 +118,7 @@ class PieChart : AppCompatActivity() {
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
             intent.putExtra(Constants.TOTAL_QUESTIONS,TotalQuestion)
             startActivity(intent)
-finish()
+            finish()
 
 
 
@@ -141,7 +138,7 @@ finish()
         pieChart = findViewById(R.id.piechart);
         mQuestionsList = Constants.getQuestions()
 
-        Toast.makeText(this,"not selected ans = $mNotSelected",Toast.LENGTH_LONG).show()
+
 
 
 

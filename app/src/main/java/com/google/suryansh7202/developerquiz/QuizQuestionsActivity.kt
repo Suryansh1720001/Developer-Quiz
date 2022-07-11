@@ -49,7 +49,6 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         mUserName = intent.getStringExtra(Constants.USER_NAME)
         mSelected_Quiz = intent.getStringExtra(Constants.SELECTED_QUIZ)
-        Toast.makeText(this,"$mSelected_Quiz",Toast.LENGTH_LONG).show()
 
         mCurrentPosition = intent.getIntExtra(Constants.CURRENT_POSITION,0)
         maxQuestion = mCurrentPosition
@@ -185,12 +184,7 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 
 
             R.id.btn_submit -> {
-//                if(mSelectedOptionPosition==0 && btnSubmit?.text == "SUBMIT"){
-//                    questionSelectedOptions.add(mSelectedOptionPosition)
-//                }
-//
-//                if(mSelectedOptionPosition==0 && (btnSubmit?.text == "FINISH" || btnSubmit?.text == "GO TO NEXT QUESTION" || btnSubmit?.text == "SUBMIT")){
-//
+
 //                    val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
 //                    if (vibrator.hasVibrator()) { // Vibrator availability checking
 //                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -201,8 +195,6 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 //                    }
 //                }
 
-
-//                Toast.makeText(this,"$mCurrentPosition",Toast.LENGTH_LONG).show()
                 val question = mQuestionsList?.get(mCurrentPosition - 1)
                     if (question!!.correctAnswer == mSelectedOptionPosition) {
                         mCorrectAnswers++

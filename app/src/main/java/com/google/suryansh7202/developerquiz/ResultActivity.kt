@@ -34,14 +34,6 @@ class ResultActivity : AppCompatActivity() {
 
 
 
-        // animation in finish button
-//        share.alpha =0f
-//        share.translationY = 50f;
-//        share.animate().alpha(1f).translationYBy(-50f).duration = 1200
-//        iv_info.alpha = 0f;
-//        iv_info.translationY = 50f;
-//        iv_info.animate().alpha(1f).translationYBy(-50f).duration = 1200
-
 
         tvName.text = intent.getStringExtra(Constants.USER_NAME)
 
@@ -83,7 +75,7 @@ class ResultActivity : AppCompatActivity() {
             val sendIntent = Intent()
             sendIntent.type = "text/plain"
             sendIntent.action = Intent.ACTION_SEND
-//          "Download this App - \n *My Score is ${CorrectAns} out of ${TotalQuestion}.* \n\nTry this Quiz App and learn in better way\nUsing this link \uD83D\uDC47\nhttps://github.com/Suryansh1720001/Quiz-Application"
+//          "Download this App - \n *My Score is ${CorrectAns} out of ${TotalQuestion}.* \n\nTry this Quiz App and learn in better way\nUsing this link \uD83D\uDC47\nhttps://github.com/Suryansh1720001/Developer Quiz-Application"
             val body ="\uD835\uDC03\uD835\uDC28\uD835\uDC30\uD835\uDC27\uD835\uDC25\uD835\uDC28\uD835\uDC1A\uD835\uDC1D \uD835\uDC2D\uD835\uDC21\uD835\uDC22\uD835\uDC2C \uD835\uDC1A\uD835\uDC29\uD835\uDC29 -\n" +
                     "\n" +
                     "\uD835\uDC0C\uD835\uDC32 \uD835\uDC12\uD835\uDC1C\uD835\uDC28\uD835\uDC2B\uD835\uDC1E ${CorrectAns} \uD835\uDC28\uD835\uDC2E\uD835\uDC2D \uD835\uDC28\uD835\uDC1F ${TotalQuestion}\n" +
