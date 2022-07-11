@@ -223,8 +223,10 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 
                     startActivity(intent)
 
+
                     finish()
                     exitProcess(0)
+
                 }
 
                 mCurrentPosition++

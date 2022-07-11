@@ -135,6 +135,7 @@ android:orientation="vertical"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="15dp"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:text="5/9"
 

@@ -70,8 +70,6 @@ class PieChart : AppCompatActivity() {
 
 
 
-
-
         for(i in mquestionSelectedOptions){
             if(i==0){
                 extraNotSelectedby_timelimit++
@@ -96,13 +94,6 @@ class PieChart : AppCompatActivity() {
 
             )
 
-            Solution?.setTextColor(Color.parseColor("#363A43"))
-                Solution?.background = ContextCompat.getDrawable(
-                    this,
-            R.drawable.selected_result_option
-                )
-
-
                     val intent = Intent(this, com.google.suryansh7202.developerquiz.Solution::class.java)
             intent.putParcelableArrayListExtra(
                 "QuestionsExtra",
@@ -118,6 +109,8 @@ class PieChart : AppCompatActivity() {
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
             intent.putExtra(Constants.TOTAL_QUESTIONS,TotalQuestion)
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
 
 
@@ -141,10 +134,12 @@ class PieChart : AppCompatActivity() {
 
 
 
-
-
         setData();
+
+
     }
+
+
 
     private fun setButtonColour(Analysis: TextView?) {
 

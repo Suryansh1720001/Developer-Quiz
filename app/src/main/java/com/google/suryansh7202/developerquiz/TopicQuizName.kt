@@ -48,6 +48,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
         }
 
@@ -63,6 +65,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
         }
 
@@ -77,6 +81,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
         }
 
@@ -92,7 +98,9 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
-            finish()
+           this.overridePendingTransition(0, 0);
+
+           finish()
         }
 
         html.setOnClickListener{
@@ -105,6 +113,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
         }
 
@@ -120,6 +130,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
         }
 
@@ -135,6 +147,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
         }
 
