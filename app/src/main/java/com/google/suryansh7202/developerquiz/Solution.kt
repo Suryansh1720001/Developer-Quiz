@@ -52,7 +52,10 @@ class Solution : AppCompatActivity() {
         mCorrectAnswers = intent.getIntExtra(Constants.CORRECT_ANSWER, 0)
         mWrongAnswer = intent.getIntExtra(Constants.WRONG_ANSWER, 0)
         mNotSelected = intent.getIntExtra(Constants.NOT_SELECTED, 0)
+        val TotalQuestion = intent.getIntExtra(Constants.TOTAL_QUESTIONS,0)
+        val tvScore = findViewById<TextView>(R.id.tv_score)
 
+        tvScore.text = "★ Your Score is ${mCorrectAnswers} out of ${TotalQuestion}."
         tvQuestion = findViewById(R.id.tv_question)
         progressBar =findViewById(R.id.ResultprogressBar)
         tvProgress = findViewById(R.id.tv_Resultprogress)
@@ -87,7 +90,7 @@ class Solution : AppCompatActivity() {
                 R.drawable.not_selected_result_option
 
             )
-
+//
            Analysis?.setTextColor(Color.parseColor("#363A43"))
             Analysis?.background = ContextCompat.getDrawable(
                 this,
@@ -108,11 +111,10 @@ class Solution : AppCompatActivity() {
             intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)
             intent.putExtra(Constants.NOT_SELECTED,mNotSelected)
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
+            intent.putExtra(Constants.TOTAL_QUESTIONS,TotalQuestion)
 
 
-//            intent.putExtra(Constants.CORRECT_ANSWER,CorrectAns)
-//            intent.putExtra(Constants.WRONG_ANSWER,WrongAns)
-//            intent.putExtra(Constants.NOT_SELECTED,NotSelected)
+
 
             startActivity(intent)
 

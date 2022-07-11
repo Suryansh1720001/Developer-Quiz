@@ -43,10 +43,17 @@ class PieChart : AppCompatActivity() {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pie_chart)
         val questionSelectedOptions = intent.getSerializableExtra("QuestionsExtra") as ArrayList<Int>?
+        val tvScore = findViewById<TextView>(R.id.tv_score)
+        val TotalQuestion = intent.getIntExtra(Constants.TOTAL_QUESTIONS,0)
+
+        val totalques = findViewById<TextView>(R.id.totalQue)
+        totalques.text = TotalQuestion.toString()
+
         sendCurrentPosition = intent.getIntExtra(Constants.Send_Current_Position, 0)
         mSelected_Quiz = intent.getStringExtra(Constants.SELECTED_QUIZ)
         mCorrectAnswers = intent.getIntExtra(Constants.CORRECT_ANSWER, 0)
@@ -58,6 +65,7 @@ class PieChart : AppCompatActivity() {
         tvResult?.text = mSelected_Quiz
         mquestionSelectedOptions.addAll(questionSelectedOptions!!)
 
+        tvScore.text = "★ Your Score is ${mCorrectAnswers} out of ${TotalQuestion}."
 
         for( i in (mquestionSelectedOptions.size+1)..10 ){
             mquestionSelectedOptions.add(0)
@@ -105,18 +113,13 @@ class PieChart : AppCompatActivity() {
             )
 
             intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
-//            Toast.makeText(this,"$sendCurrentPosition",Toast.LENGTH_LONG).show()
+
 
             intent.putExtra(Constants.CORRECT_ANSWER,mCorrectAnswers)
             intent.putExtra(Constants.WRONG_ANSWER,mWrongAnswer)
             intent.putExtra(Constants.NOT_SELECTED,mNotSelected)
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
-
-
-//            intent.putExtra(Constants.CORRECT_ANSWER,CorrectAns)
-//            intent.putExtra(Constants.WRONG_ANSWER,WrongAns)
-//            intent.putExtra(Constants.NOT_SELECTED,NotSelected)
-
+            intent.putExtra(Constants.TOTAL_QUESTIONS,TotalQuestion)
             startActivity(intent)
 finish()
 
@@ -125,10 +128,6 @@ finish()
     }
 
 
-
-
-//        mCurrentPosition = intent.getIntExtra(Constants.CURRENT_POSITION,0)
-//        maxQuestion = mCurrentPosition
 
         correctAnswer = findViewById(R.id.CorrectAnswer)
         wrongAnswer = findViewById(R.id.wrong_answer)
@@ -142,19 +141,11 @@ finish()
         pieChart = findViewById(R.id.piechart);
         mQuestionsList = Constants.getQuestions()
 
-
-//        Toast.makeText(this,"Correct ans = $mCorrectAnswers",Toast.LENGTH_LONG).show()
-//        Toast.makeText(this,"wrong ans = $mWrongAnswer",Toast.LENGTH_LONG).show()
         Toast.makeText(this,"not selected ans = $mNotSelected",Toast.LENGTH_LONG).show()
 
 
 
 
-
-
-        // Creating a method setData()
-        // to set the text in text view and pie chart
-//        Toast.makeText(this,"$questionSelectedOptions",Toast.LENGTH_LONG).show()
         setData();
     }
 

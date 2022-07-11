@@ -108,6 +108,8 @@ class ResultActivity : AppCompatActivity() {
             intent.putExtra(Constants.WRONG_ANSWER,WrongAns)
             intent.putExtra(Constants.NOT_SELECTED,NotSelected)
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
+            intent.putExtra(Constants.TOTAL_QUESTIONS,TotalQuestion)
+
 
             startActivity(intent)
 

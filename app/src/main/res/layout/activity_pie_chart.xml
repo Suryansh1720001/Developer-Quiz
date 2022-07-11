@@ -22,7 +22,7 @@
     <androidx.cardview.widget.CardView
 
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="140dp"
         android:layout_below="@+id/cardViewGraph"
         android:layout_marginBottom="50dp"
         android:elevation="10dp"
@@ -57,12 +57,35 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"/>
 
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★ your score is 0 out of 10"
+                android:gravity="center"
+                android:padding="2dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"
+                android:layout_marginBottom="2dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_two"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"/>
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:layout_marginTop="39dp"
+                android:layout_marginTop="10dp"
             android:gravity="bottom"
 
                 >
@@ -320,6 +343,47 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
+                    android:text="Total Question"
+                    android:textSize="18sp" />
+
+                <!--Text view to display the -->
+                <!-- percentage of programming language -->
+                <!-- used. For now default set to 0-->
+                <TextView
+                    android:id="@+id/totalQue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_two"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp">
+
+                <!--Text view to display R -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:text="Correct Answer"
                     android:textSize="18sp" />
 
@@ -361,7 +425,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:text="Wrong Answer"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
 
                 <!--Text view to display the percentage -->
                 <!-- of programming language used. -->
