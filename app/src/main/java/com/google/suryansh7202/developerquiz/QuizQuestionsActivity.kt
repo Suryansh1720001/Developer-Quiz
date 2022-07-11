@@ -1,17 +1,19 @@
 package com.google.suryansh7202.developerquiz
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
-import android.os.*
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.os.CountDownTimer
+import android.os.Parcelable
 import android.view.View
-import android.widget.*
+import android.widget.Button
+import android.widget.ProgressBar
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import org.w3c.dom.Text
-
 import kotlin.system.exitProcess
 
 class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
@@ -84,7 +86,7 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 
 
     private fun TimeRemaning(mTextFieldsec: TextView) {
-        object : CountDownTimer(5000, 1000) {
+        object : CountDownTimer(10000, 1000) {
             @SuppressLint("SetTextI18n")
             override fun onTick(millisUntilFinished: Long) {
                 // TODO do this later in minutes and seconds both
@@ -100,7 +102,6 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
         }.start()
 
     }
-
 
     private fun timeFinish(){
         val intent = Intent(this, ResultActivity::class.java)
@@ -118,7 +119,9 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
         )
         intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
         startActivity(intent)
+
         finish()
+
     }
 
 

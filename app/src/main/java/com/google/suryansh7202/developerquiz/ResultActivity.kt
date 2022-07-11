@@ -110,6 +110,7 @@ class ResultActivity : AppCompatActivity() {
             intent.putExtra(Constants.SELECTED_QUIZ, mSelected_Quiz)
 
             startActivity(intent)
+
         }
 
     }

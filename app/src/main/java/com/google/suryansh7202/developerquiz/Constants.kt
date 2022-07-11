@@ -226,6 +226,267 @@ object Constants {
         questionList.add(que20)
 
 
+
+
+        // PYTHON QUIZ
+
+
+        val que21 = Question(
+            21,"What is the output of the following code? " +
+                    "import math\n" +
+                    " \n" +
+                    "   def main():\n" +
+                    "      math.cos(math.pi)\n" +
+                    "main()\n" +
+                    "   print(main())",
+            R.drawable.java1,
+            "-1","None","Error","Math.pi not defined",
+
+            2
+        )
+        questionList.add(que21)
+
+
+        val que22 = Question(
+            22,"Syntax error in python is detected by _________at _______",
+            R.drawable.java1,
+            "compiler/ compile time","compiler/ run time","interpreter/ run timee","interpreter/ compile time",
+
+            3
+        )
+        questionList.add(que22)
+
+
+        val que23 = Question(
+            23,"Select the correct function among them which can be used to write the data to perform for a binary output?",
+            R.drawable.java1,
+            "Write","Output.binary","Dump","Binary.output",
+
+            3
+        )
+        questionList.add(que23)
+
+
+        val que24 = Question(
+            24,"Which of the following is used to define a block of code in Python language?",
+            R.drawable.java1,
+            "Indentation","Key","Brackets","All of the mentioned",
+
+            1
+        )
+        questionList.add(que24)
+
+
+        val que25 = Question(
+            25,"Which code can be used as an input dialog named ''Is this a character? ''",
+            R.drawable.java1,
+            " Tkinter.messagebox.showinfo(''showinfo'' , ''Is this a character? '')","Tkinter.messagebox.askyesno(''askyesno'' , ''Is this a character? '')",
+            "Tkinter.messagebox.showerror(''showerror'' , ''Is this a character? '')","Tkinter.messagebox.showwarning(''showwarning'' , ' 'Is this a character? '')",
+
+            2
+        )
+        questionList.add(que25)
+
+
+        val que26 = Question(
+            26,"What will be the output of the following Python code snippet if x=1?\n" +
+                    "x<<2",
+            R.drawable.java1,
+            "4","2","1","8",
+
+            1
+        )
+        questionList.add(que26)
+
+
+        val que27 = Question(
+            27,"Which of the following is the truncation division operator in Python?",
+            R.drawable.java1,
+            "|","//","/","%",
+
+            2
+        )
+        questionList.add(que27)
+
+
+        val que28 = Question(
+            28,"Which of the following functions is a built-in function in python?",
+            R.drawable.java1,
+            "factorial()","print()","seed()","sqrt()",
+
+            2
+        )
+        questionList.add(que28)
+
+
+
+        val que29 = Question(
+            29,"What will be the output of the following Python function?\n" +
+                    "\n" +
+                    "min(max(False,-3,-4), 2,7)",
+            R.drawable.java1,
+            "-4","-3","2","False",
+
+            4
+        )
+        questionList.add(que29)
+
+
+        val que30 = Question(
+            30,"Which one of the following is not a keyword in Python language?",
+            R.drawable.java1,
+            "pass","eval","assert","nonlocal",
+
+            2
+        )
+        questionList.add(que30)
+
+
+
+
+        // C language QUIZ
+
+
+
+
+        val que31 = Question(
+            31,"Identify the C compiler of UNIX.",
+            R.drawable.java1,
+            "gcc","cc","Borland","vc++",
+
+            2
+        )
+        questionList.add(que31)
+
+
+
+        val que32 = Question(
+            32,"Which standard library function can return a pointer to the last occurrence of a character in a string?\n" +
+                    "\n",
+            R.drawable.java1,
+            "stchar()","strrchr()","strchar() & stchar()","strrchar()",
+
+            2
+        )
+        questionList.add(que32)
+
+
+
+
+
+
+        val que33 = Question(
+            33,"Which of the following variable cannot be used by switch-case statement?",
+            R.drawable.java1,
+            "char","int","float","Double",
+
+            3
+        )
+        questionList.add(que33)
+
+
+
+
+        val que34 = Question(
+            34," In C programming language, a function prototype is a declaration of the function that just specifies the function’s interface (function's name, argument types and return type) and extracts the body of the function. By defining the function, we get to know what action a particular function is going to perform.",
+            R.drawable.java1,
+            "True","None of these","False","110",
+
+            1
+        )
+        questionList.add(que34)
+
+
+
+
+        val que35 = Question(
+            35,"hat is the output of the following program?\n" +
+                    "\n" +
+                    "#include<stdio.h>\n" +
+                    "\n" +
+                    "main()\n" +
+                    "{ \n" +
+                    "   char *s = \"Abc\";\n" +
+                    "   \n" +
+                    "   while(*s)\n" +
+                    "      printf(\"%c\", *s++);\n" +
+                    "}",
+            R.drawable.java1,
+            "Abc","bc","Compile error","Runtime error",
+
+            1
+        )
+        questionList.add(que35)
+
+
+
+
+        val que36 = Question(
+            36,"Keywords cannot be used as ____",
+            R.drawable.java1,
+            "Variables","Variables or constant names","Constant names","None of the above",
+
+            2
+        )
+        questionList.add(que36)
+
+
+
+
+        val que37 = Question(
+            37,"____ are declared within the body of a function.",
+            R.drawable.java1,
+            "Variables","Local variables","Main functions","Arrays",
+
+            2
+        )
+        questionList.add(que37)
+
+
+
+
+        val que38 = Question(
+            38,"____ is an effective tool for programming scientific, mathematical and engineering computations.",
+            R.drawable.java1,
+            "Parameter","Main function","Recursion","Local variable",
+
+            3
+        )
+        questionList.add(que38)
+
+
+
+
+        val que39 = Question(
+            39,"The formatting character should be preceded by a ____ symbol.",
+            R.drawable.java1,
+            "+","/","%","-",
+
+            3
+        )
+        questionList.add(que39)
+
+
+        val que40 = Question(
+            40,"The functions that are defined according to our requirements are called ____",
+            R.drawable.java1,
+            "Good functions","Modules","User defined functions","Library functions",
+
+            3
+        )
+        questionList.add(que40)
+
+
+
+
+
+
+
+
+
+
+
+
         return questionList
     }
 }
