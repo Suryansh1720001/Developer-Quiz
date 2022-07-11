@@ -10,7 +10,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    android:background="@color/color_white"
+    android:background="#ecfefe"
+
 
     tools:context=".MainActivity">
 
@@ -27,11 +28,15 @@
         android:layout_marginBottom="50dp"
         android:elevation="10dp"
         app:cardCornerRadius="10dp"
+
+
      >
 
         <!--Relative layout to display -->
         <!-- use of programming languages -->
         <LinearLayout
+
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -58,12 +63,15 @@
                 android:layout_marginTop="5dp"/>
 
             <TextView
+
                 android:id="@+id/tv_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="★ your score is 0 out of 10"
                 android:gravity="center"
                 android:padding="2dp"
+
+
                 android:layout_marginLeft="25dp"
                 android:textSize="18sp"
                 android:textColor="@android:color/secondary_text_dark"
@@ -82,6 +90,7 @@
 
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -92,12 +101,14 @@
 
 
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     >
 
                     <TextView
+
                         android:id="@+id/Analysis"
 
                         android:layout_width="match_parent"
@@ -116,12 +127,14 @@
 
 
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     >
 
                     <TextView
+
                         android:id="@+id/Solution"
                         android:textColor="#7A8089"
                         android:layout_width="match_parent"
@@ -148,18 +161,6 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

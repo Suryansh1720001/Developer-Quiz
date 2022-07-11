@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 android:orientation="vertical"
+    android:background="@drawable/bg4"
 
     tools:context=".QuizQuestionsActivity">
 
@@ -20,6 +21,7 @@ android:orientation="vertical"
         android:layout_height="65dp"
         android:layout_below="@+id/cardViewGraph"
         android:layout_marginBottom="5dp"
+
         android:elevation="10dp"
         app:cardCornerRadius="11dp"
         >
@@ -27,6 +29,7 @@ android:orientation="vertical"
         <!--Relative layout to display -->
         <!-- use of programming languages -->
         <LinearLayout
+            android:background="@drawable/bg4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
