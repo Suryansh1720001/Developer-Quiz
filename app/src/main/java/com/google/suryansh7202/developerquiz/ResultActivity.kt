@@ -43,10 +43,10 @@ class ResultActivity : AppCompatActivity() {
         val TotalQuestion = intent.getIntExtra(Constants.TOTAL_QUESTIONS,0)
 
 
-        if(CorrectAns<=32){
+        if(CorrectAns<=3){
             wish.text = "Better Luck Next Time"
 
-        }else if(CorrectAns in 33..70){
+        }else if(CorrectAns in 4..7){
             wish.text = "Keep it up"
 
         }

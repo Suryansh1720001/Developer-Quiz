@@ -85,7 +85,7 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 
 
     private fun TimeRemaning(mTextFieldsec: TextView) {
-        object : CountDownTimer(10000, 1000) {
+        object : CountDownTimer(120000, 1000) {
             @SuppressLint("SetTextI18n")
             override fun onTick(millisUntilFinished: Long) {
                 // TODO do this later in minutes and seconds both
