@@ -1,4 +1,4 @@
-# Developer-Quiz App - [DOWNLOAD APP](https://www.mediafire.com/file/gevaw9ytnk2scvp/Flag_Quiz_App.apk/file?dkey=gevaw9ytnk2scvp)
+# Developer-Quiz App - [DOWNLOAD APP](https://www.mediafire.com/file/dedsyzki870kzsv/Developer_Quiz.apk/file)
 
 <img src ="https://user-images.githubusercontent.com/85965606/178428964-4ba6794c-fa80-489d-8bf9-947b6ee0cd9d.png" width="850" heigth="850">
 
@@ -48,7 +48,7 @@ And of course Flag Quiz-App itself is open source with a [public repository](htt
 ... (GooglePlay Store link available soon) ...
 
 - Use this link to download the app  
-- [DOWNLOAD APP](https://www.mediafire.com/file/gevaw9ytnk2scvp/Flag_Quiz_App.apk/file?dkey=gevaw9ytnk2scvp)
+- [DOWNLOAD APP](https://www.mediafire.com/file/dedsyzki870kzsv/Developer_Quiz.apk/file)
 
 ## Attributes
 
