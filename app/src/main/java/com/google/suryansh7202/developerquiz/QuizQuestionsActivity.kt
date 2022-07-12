@@ -118,6 +118,8 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
         )
         intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
         startActivity(intent)
+        this.overridePendingTransition(0, 0);
+
 
         finish()
 
@@ -222,6 +224,7 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
                     intent.putExtra(Constants.Send_Current_Position,sendCurrentPosition)
 
                     startActivity(intent)
+                    this.overridePendingTransition(0, 0);
 
 
                     finish()

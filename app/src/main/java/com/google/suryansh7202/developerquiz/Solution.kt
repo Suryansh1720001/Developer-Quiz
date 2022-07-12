@@ -90,6 +90,12 @@ class Solution : AppCompatActivity() {
                 R.drawable.not_selected_result_option
 
             )
+//
+           Analysis?.setTextColor(Color.parseColor("#363A43"))
+            Analysis?.background = ContextCompat.getDrawable(
+                this,
+                R.drawable.selected_result_option
+            )
 
 
             val intent = Intent(this, PieChart::class.java)

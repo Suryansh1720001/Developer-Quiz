@@ -28,10 +28,10 @@ class ResultActivity : AppCompatActivity() {
         val share = findViewById<ImageView>(R.id.share)
         val wish = findViewById<TextView>(R.id.wish_congratulation)
         val resultAnaysis = findViewById<Button>(R.id.btn_result_analysis)
+
         val questionSelectedOptions = intent.getSerializableExtra("QuestionsExtra") as ArrayList<*>?
         sendCurrentPosition = intent.getIntExtra(Constants.Send_Current_Position,0)
         mSelected_Quiz = intent.getStringExtra(Constants.SELECTED_QUIZ)
-
 
 
 
@@ -52,7 +52,7 @@ class ResultActivity : AppCompatActivity() {
         }
 
 
-        tvScore.text = "Your Score is ${CorrectAns} out of ${TotalQuestion}."
+        tvScore.text = "Your Score is ${CorrectAns} out of ${TotalQuestion} in ${mSelected_Quiz} Quiz."
 
         btnFinish.setOnClickListener {
 
