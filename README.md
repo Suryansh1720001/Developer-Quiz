@@ -59,7 +59,7 @@ Thank you for providing the images from your sources
 - <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Freepik - Flaticon</a>
 
 - <a href="https://iconscout.com/icons/javascript" target="_blank">Javascript Icon</a> by <a href="https://iconscout.com/contributors/maninderkaur" target="_blank">maninderkaur</a>
-
+- <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
 
 
 
