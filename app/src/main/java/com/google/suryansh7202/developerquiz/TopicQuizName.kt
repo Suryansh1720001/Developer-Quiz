@@ -1,9 +1,9 @@
 package com.google.suryansh7202.developerquiz
 
+import android.content.Context
 import android.content.Intent
+import android.os.*
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.os.Parcelable
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -38,6 +38,7 @@ class TopicQuizName : AppCompatActivity() {
         val reactJS = findViewById<ImageView>(R.id.iv_reactjs)
 
         Cplusplus.setOnClickListener {
+            vibration()
             mCurrentPosition =1
             mSelected_Quiz = "C++"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
@@ -55,6 +56,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
         java.setOnClickListener {
+            vibration()
+
             mCurrentPosition=11
             mSelected_Quiz = "Java"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
@@ -72,6 +75,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
         python.setOnClickListener {
+            vibration()
+
             mCurrentPosition=21
             mSelected_Quiz = "Python"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
@@ -89,7 +94,9 @@ class TopicQuizName : AppCompatActivity() {
 
 
        c.setOnClickListener {
-            mCurrentPosition=31
+           vibration()
+
+           mCurrentPosition=31
             mSelected_Quiz = "C"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
             intent.putExtra(Constants.USER_NAME, mUserName)
@@ -104,6 +111,8 @@ class TopicQuizName : AppCompatActivity() {
         }
 
         html.setOnClickListener{
+            vibration()
+
             mCurrentPosition=41
             mSelected_Quiz = "HTML"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
@@ -121,6 +130,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
         CSS.setOnClickListener{
+            vibration()
+
             mCurrentPosition=51
             mSelected_Quiz = "CSS"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
@@ -138,6 +149,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
         javascript.setOnClickListener{
+            vibration()
+
             mCurrentPosition=61
             mSelected_Quiz = "JavaScript"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
@@ -155,6 +168,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
         reactJS.setOnClickListener{
+            vibration()
+
             mCurrentPosition=71
             mSelected_Quiz = "React JS"
             val intent = Intent(this, QuizQuestionsActivity::class.java)
@@ -164,6 +179,8 @@ class TopicQuizName : AppCompatActivity() {
 
 
             startActivity(intent)
+            this.overridePendingTransition(0, 0);
+
             finish()
         }
 
@@ -172,5 +189,16 @@ class TopicQuizName : AppCompatActivity() {
 
 
 
+    }
+
+    private fun vibration(){
+        val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        if (vibrator.hasVibrator()) { // Vibrator availability checking
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE)) // New vibrate method for API Level 26 or higher
+            } else {
+                vibrator.vibrate(500) // Vibrate method for below API Level 26
+            }
+        }
     }
 }

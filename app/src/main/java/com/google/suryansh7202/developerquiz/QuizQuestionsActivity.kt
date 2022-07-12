@@ -1,12 +1,11 @@
 package com.google.suryansh7202.developerquiz
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
-import android.os.Bundle
-import android.os.CountDownTimer
-import android.os.Parcelable
+import android.os.*
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
@@ -187,15 +186,15 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
 
             R.id.btn_submit -> {
 
-//                    val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
-//                    if (vibrator.hasVibrator()) { // Vibrator availability checking
-//                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//                            vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE)) // New vibrate method for API Level 26 or higher
-//                        } else {
-//                            vibrator.vibrate(500) // Vibrate method for below API Level 26
-//                        }
-//                    }
-//                }
+                    val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+                    if (vibrator.hasVibrator()) { // Vibrator availability checking
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE)) // New vibrate method for API Level 26 or higher
+                        } else {
+                            vibrator.vibrate(500) // Vibrate method for below API Level 26
+                        }
+                    }
+
 
                 val question = mQuestionsList?.get(mCurrentPosition - 1)
                     if (question!!.correctAnswer == mSelectedOptionPosition) {

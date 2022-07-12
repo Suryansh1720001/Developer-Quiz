@@ -136,14 +136,14 @@ class Solution : AppCompatActivity() {
 
 
         previous.setOnClickListener {
-//            val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
-//            if (vibrator.hasVibrator()) { // Vibrator availability checking
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//                    vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE)) // New vibrate method for API Level 26 or higher
-//                } else {
-//                    vibrator.vibrate(500) // Vibrate method for below API Level 26
-//                }
-//            }
+            val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            if (vibrator.hasVibrator()) { // Vibrator availability checking
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE)) // New vibrate method for API Level 26 or higher
+                } else {
+                    vibrator.vibrate(500) // Vibrate method for below API Level 26
+                }
+            }
             previous.alpha =1f
             previous.translationY = 8f;
             previous.animate().alpha(1f).translationYBy(-5f).duration = 50
@@ -163,14 +163,14 @@ class Solution : AppCompatActivity() {
         }
 
         next.setOnClickListener {
-//            val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
-//            if (vibrator.hasVibrator()) { // Vibrator availability checking
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//                    vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE)) // New vibrate method for API Level 26 or higher
-//                } else {
-//                    vibrator.vibrate(500) // Vibrate method for below API Level 26
-//                }
-//            }
+            val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            if (vibrator.hasVibrator()) { // Vibrator availability checking
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    vibrator.vibrate(VibrationEffect.createOneShot(30, VibrationEffect.DEFAULT_AMPLITUDE)) // New vibrate method for API Level 26 or higher
+                } else {
+                    vibrator.vibrate(500) // Vibrate method for below API Level 26
+                }
+            }
             next.alpha =1f
             next.translationY = 8f;
             next.animate().alpha(1f).translationYBy(-5f).duration = 50
