@@ -120,6 +120,7 @@ class QuizQuestionsActivity : AppCompatActivity(),View.OnClickListener {
         this.overridePendingTransition(0, 0);
 
 
+
         finish()
 
     }
