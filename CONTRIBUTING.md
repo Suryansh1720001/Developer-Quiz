@@ -67,5 +67,5 @@ $ git push -u origin <branch_name>
 
 ## Contributing as a designer:
 - All of the above
-- Create a PR under the folder "designs" that will be available at the root of this repository
+- Create a PR under the folder "designs" that will be available at the root of this repository or if not present then formed it accordingly.
 - Wait for your PR to get accepted
