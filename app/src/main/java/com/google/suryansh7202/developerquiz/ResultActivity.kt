@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 class ResultActivity : AppCompatActivity() {
     private var sendCurrentPosition:Int = 0
     private var mSelected_Quiz: String? =null
+    var percent:Double = 0.0;
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,7 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
         val iv_info = findViewById<ImageView>(R.id.iv_info)
+        val perct = findViewById<TextView>(R.id.tv_percent)
         val tvName = findViewById<TextView>(R.id.tv_name)
         val tvScore = findViewById<TextView>(R.id.tv_score)
         val btnFinish = findViewById<Button>(R.id.btn_finish)
@@ -41,7 +43,7 @@ class ResultActivity : AppCompatActivity() {
         val WrongAns = intent.getIntExtra(Constants.WRONG_ANSWER,0)
         val NotSelected = intent.getIntExtra(Constants.NOT_SELECTED,0)
         val TotalQuestion = intent.getIntExtra(Constants.TOTAL_QUESTIONS,0)
-
+             percent = ((CorrectAns.toDouble()/TotalQuestion.toDouble())*100).toDouble();
 
         if(CorrectAns<=3){
             wish.text = "Better Luck Next Time"
@@ -53,6 +55,7 @@ class ResultActivity : AppCompatActivity() {
 
 
         tvScore.text = "Your Score is ${CorrectAns} out of ${TotalQuestion} in ${mSelected_Quiz} Quiz."
+        perct.text = "Your Obtained Percentage =$percent" + "%";
 
         btnFinish.setOnClickListener {
 
