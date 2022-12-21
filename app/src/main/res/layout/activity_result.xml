@@ -17,6 +17,7 @@
         >
 
         <TextView
+            android:fontFamily="@font/quicksand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -80,6 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:fontFamily="@font/quicksand"
         android:text="Hey Congratulations"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -92,6 +94,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="Username"
+        android:fontFamily="@font/quicksand"
         android:gravity="center"
         android:textColor="@color/white"
         android:layout_marginTop="15dp"
@@ -105,11 +108,22 @@
         android:layout_height="wrap_content"
         android:text="your score is 0 out of 10"
         android:gravity="center"
-        android:padding="5dp"
+        android:fontFamily="@font/quicksand"
         android:textSize="18sp"
         android:textColor="@android:color/secondary_text_dark"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="10dp"
         />
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="your score is 0 out of 10"
+                android:gravity="center"
+                android:fontFamily="@font/quicksand"
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"
+                android:layout_marginBottom="25dp"
+                />
 
 
 
@@ -119,9 +133,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:text="result analysis"
-
+        android:fontFamily="@font/quicksand"
         android:backgroundTint="@android:color/white"
         android:textSize="18sp"
         android:textColor="@color/design_default_color_primary"
@@ -136,6 +150,7 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:text="finish"
+        android:fontFamily="@font/quicksand"
         android:backgroundTint="@android:color/white"
         android:textSize="18sp"
         android:textColor="@color/design_default_color_primary"

@@ -14,6 +14,7 @@
         android:id="@+id/UserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand"
         android:gravity="left"
         android:paddingLeft="25dp"
         android:textSize="25sp"
@@ -71,12 +72,12 @@
                 <ImageView
                     android:id="@+id/iv_java"
                     android:layout_width="150dp"
-                    android:layout_height="100dp"
+                    android:layout_height="150dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
 
                     android:contentDescription="java"
-                    app:srcCompat="@drawable/java" />
+                    app:srcCompat="@drawable/img" />
 
 
             </LinearLayout>

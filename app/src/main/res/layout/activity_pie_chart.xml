@@ -11,12 +11,7 @@
     android:orientation="vertical"
 
     android:background="#ecfefe"
-
-
     tools:context=".MainActivity">
-
-
-
 
 
 
@@ -48,6 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Result Analysis"
+                android:fontFamily="@font/quicksand"
                 android:textSize="23sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="25dp"
@@ -66,6 +62,7 @@
 
                 android:id="@+id/tv_score"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/quicksand"
                 android:layout_height="wrap_content"
                 android:text="★ your score is 0 out of 10"
                 android:gravity="center"
@@ -110,7 +107,7 @@
                     <TextView
 
                         android:id="@+id/Analysis"
-
+                        android:fontFamily="@font/quicksand"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -134,7 +131,7 @@
                     >
 
                     <TextView
-
+                        android:fontFamily="@font/quicksand"
                         android:id="@+id/Solution"
                         android:textColor="#7A8089"
                         android:layout_width="match_parent"
@@ -228,9 +225,11 @@
                     <!--Text view to display R -->
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Correct"
-                        android:paddingLeft="10dp"/>
+                        android:layout_height="match_parent"
+
+                        android:fontFamily="@font/quicksand"
+                        android:paddingLeft="10dp"
+                        android:text="Correct" />
 
                 </LinearLayout>
 
@@ -250,9 +249,11 @@
                     <!--Text view to display python text -->
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Wrong"
-                        android:paddingLeft="10dp"/>
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/quicksand"
+                        android:paddingLeft="10dp"
+
+                        android:text="Wrong" />
 
                 </LinearLayout>
 
@@ -274,6 +275,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="not selected"
+
+                        android:fontFamily="@font/quicksand"
                         android:paddingLeft="10dp"/>
 
                 </LinearLayout>
@@ -317,7 +320,9 @@
                 android:layout_height="wrap_content"
                 android:text="Deep Analysis"
                 android:textSize="23sp"
+                android:fontFamily="@font/quicksand"
                 android:textStyle="bold"
+
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"/>
 
@@ -345,6 +350,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:text="Total Question"
+
                     android:textSize="18sp" />
 
                 <!--Text view to display the -->
@@ -384,8 +390,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
+
                     android:text="Correct Answer"
+                    android:fontFamily="@font/quicksand"
                     android:textSize="18sp" />
 
                 <!--Text view to display the -->
@@ -426,6 +433,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:text="Wrong Answer"
+
                     android:textSize="18sp" />
 
                 <!--Text view to display the percentage -->
@@ -462,8 +470,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
+
                     android:text="Not Selected"
+                    android:fontFamily="@font/quicksand"
                     android:textSize="18sp"/>
 
                 <!--Text view to display the percentage -->

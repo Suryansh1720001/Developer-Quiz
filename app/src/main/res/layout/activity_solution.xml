@@ -34,6 +34,7 @@
             <TextView
                 android:id="@+id/tv_result"
                 android:layout_width="match_parent"
+                android:fontFamily="@font/quicksand"
                 android:layout_height="wrap_content"
                 android:text="Result Analysis"
                 android:textSize="23sp"
@@ -52,6 +53,7 @@
 
             <TextView
                 android:id="@+id/tv_score"
+                android:fontFamily="@font/quicksand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="★ your score is 0 out of 10"
@@ -90,7 +92,7 @@
 
                     <TextView
                         android:id="@+id/Analysis"
-
+                        android:fontFamily="@font/quicksand"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -121,6 +123,7 @@
                         android:text="Solution"
                         android:textStyle="bold"
                         android:textSize="20dp"
+                        android:fontFamily="@font/quicksand"
                         >
 
                     </TextView>
@@ -201,6 +204,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
+                android:fontFamily="@font/quicksand"
                 android:textSize="22sp"
                 android:textColor="#000000"
                 android:text="What Country does this flag belog to?"
@@ -214,6 +218,7 @@
                 android:layout_height="wrap_content"
 
                 android:text="Your Answer"
+                android:fontFamily="@font/quicksand"
                 android:layout_marginStart="7dp"
 
                 android:textColor="#000000"
@@ -228,6 +233,7 @@
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:padding="15dp"
+                android:fontFamily="@font/quicksand"
                 android:textStyle="bold"
                 android:textColor="#5C5E67"
                 android:textSize="18sp"
@@ -244,6 +250,7 @@
                 android:text="Correct Answer"
 
                 android:layout_marginStart="7dp"
+                android:fontFamily="@font/quicksand"
                 android:textColor="#000000"
                 android:layout_marginTop="10dp"
 
@@ -259,6 +266,7 @@
                 android:padding="15dp"
                 android:textStyle="bold"
                 android:textColor="#5C5E67"
+                android:fontFamily="@font/quicksand"
                 android:textSize="18sp"
                 android:background="@drawable/default_option_border_bg"
                 android:text="Apple"
