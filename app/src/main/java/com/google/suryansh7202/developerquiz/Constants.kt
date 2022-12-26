@@ -894,6 +894,100 @@ object Constants {
             1
         )
         questionList.add(que80)
+        val que81 = Question(
+            81,"Which of the following is/are a part of Android Architecture?",
+            R.drawable.andstudio,
+            "Applications","Linux Kernel",
+            "Android Application Framework","All of the Above",
+
+            4
+        )
+        questionList.add(que81)
+        val que82 = Question(
+            82,"Which of the following is the first callback method that is invoked by the system during an activity life-cycle?",
+            R.drawable.andstudio,
+            "onClick() method","onCreate() method",
+            "onStart() method","onRestart() method",
+
+            2
+        )
+        questionList.add(que82)
+        val que83 = Question(
+            83,"What is the use of content provider in Android?",
+            R.drawable.andstudio,
+            "For storing the data in the database","For sharing the data between applications",
+            "For sending the data from an application to another application","None of the above",
+
+            3
+        )
+        questionList.add(que83)
+        val que84 = Question(
+            84,"AAPT stands for",
+            R.drawable.andstudio,
+            "Android Activity Packaging Tool","Android Asset Packaging Tool",
+            "Android Action Packaging Tool","None of the above",
+
+            2
+        )
+        questionList.add(que84)
+        val que85 = Question(
+            85,"Which of the following is the parent class of Activity?",
+            R.drawable.andstudio,
+            "context","object",
+            "contextThemeWrapper","None of the above",
+
+            3
+        )
+        questionList.add(que85)
+        val que86 = Question(
+            86,"Which of the following is the topmost layer of android architecture?",
+            R.drawable.andstudio,
+            "System Libraries and Android Runtime","Linux Kernel",
+            "Applications","Applications Framework",
+
+            3
+        )
+        questionList.add(que86)
+        val que87 = Question(
+            87,"Which of the layer is the lowest layer of android architecture?",
+            R.drawable.andstudio,
+            "System Libraries and Android Runtime","Linux Kernel",
+            "Applications","Applications Framework",
+
+            2
+        )
+        questionList.add(que87)
+        val que88 = Question(
+            88,"Which of the following is not a state in the service lifecycle?",
+            R.drawable.andstudio,
+            "Destroyed","Start",
+            "Paused","Running",
+
+            3
+        )
+        questionList.add(que88)
+        val que89 = Question(
+            89,"In which state the activity is, if it is not in focus, but still visible on the screen?",
+            R.drawable.andstudio,
+            "Stopped state","Destroyed state",
+            "Paused state","Running state",
+
+            3
+        )
+        questionList.add(que89)
+        val que90 = Question(
+            90,"Is it true that \"There can be only one running activity at a given time\"?",
+            R.drawable.andstudio,
+            "True","False",
+            "May be","Can't say",
+
+            1
+        )
+        questionList.add(que90)
+
+
+
+
 
 
 
@@ -904,3 +998,4 @@ object Constants {
         return questionList
     }
 }
+
