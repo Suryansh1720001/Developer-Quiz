@@ -197,7 +197,7 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="5dp"
                     android:foregroundGravity="left"
-                    android:contentDescription="JavaScript"
+                    android:contentDescription="AndroidStudio"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/andstudio" />
 
