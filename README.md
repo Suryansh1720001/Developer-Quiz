@@ -1,11 +1,15 @@
-# Developer-Quiz App - [DOWNLOAD APP](https://www.mediafire.com/file/dedsyzki870kzsv/Developer_Quiz.apk/file)
+![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=100&section=footer&text=Developer+Quiz&fontSize=50)
 
+
+[![GitHub issues](https://img.shields.io/github/issues/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/network)
+[![GitHub stars](https://img.shields.io/github/stars/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/stargazers)
+
+# Enhance your knowledge by taking part in this Quiz. Here you can find out 8+ different developer quiz 
 <img src ="https://user-images.githubusercontent.com/85965606/178428964-4ba6794c-fa80-489d-8bf9-947b6ee0cd9d.png" width="850" heigth="850">
 
-
-## Enhance your knowledge by taking part in this Quiz. Here you can find out 8+ different developer quiz 
-
 It is based on Kotlin language. Find out many quiz according to your field.
+
 - C++
 - Java
 - HTML
@@ -36,7 +40,6 @@ It is based on Kotlin language. Find out many quiz according to your field.
 
 
 ## Tech
-
 - Kotlin language
 - xml language
 - Android Studoid
@@ -60,6 +63,4 @@ Thank you for providing the images from your sources
 
 - <a href="https://iconscout.com/icons/javascript" target="_blank">Javascript Icon</a> by <a href="https://iconscout.com/contributors/maninderkaur" target="_blank">maninderkaur</a>
 - <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
-
-
 
