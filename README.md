@@ -44,7 +44,7 @@ It is based on Kotlin language. Find out many quiz according to your field.
 - xml language
 - Android Studoid
 
-And of course Flag Quiz-App itself is open source with a [public repository](https://github.com/Suryansh1720001/Developer-Quiz)
+And of course Developer Quiz-App itself is open source with a [public repository](https://github.com/Suryansh1720001/Developer-Quiz)
  on GitHub.
 
 ## Installation
