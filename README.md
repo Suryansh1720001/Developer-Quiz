@@ -85,14 +85,20 @@ Thank you for providing the images from your sources
 
 <br>
 
-
 ## Want to Contribute😎:
 - Refer to <a href="CONTRIBUTING.md">Contributing Guide</a><br>
 - Don't forget to follow [@Suryansh1720001](https://github.com/Suryansh1720001) ⭐😊
+<br>
+
+## 🥂 Past Participation of this Repo	
+|||
+|---|---|
+|![image](https://user-images.githubusercontent.com/85965606/214620696-34dee8ca-17f9-42d0-ab45-20f2c6f42c84.png)|**Kharagpur Winter Of Code**|
+
+<br>
 
 ## Our Amazing Contributors 👨‍👨‍👦‍👦❤️
 Thanks to all the contributors who worked for this project to stay alive! 😊😎
-
 
 <a align="center" href="https://github.com/Suryansh1720001/Developer-Quiz/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Suryansh1720001/Developer-Quiz&&max=817" />  
