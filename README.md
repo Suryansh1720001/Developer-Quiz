@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=100&section=footer&text=Developer+Quiz&fontSize=50)
 
-[Make some awesome contribution](https://github.com/Suryansh1720001/Developer-Quiz/blob/main/README.md#contribution)
+# ⭐ Click here for [the Awesome Contribution](https://github.com/Suryansh1720001/Developer-Quiz/blob/main/README.md#contribution) 
 
 
 [![GitHub issues](https://img.shields.io/github/issues/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/issues)
