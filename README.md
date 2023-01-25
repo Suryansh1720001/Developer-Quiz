@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=100&section=footer&text=Developer+Quiz&fontSize=50)
 
-
+[Make some awesome contribution](https://github.com/Suryansh1720001/Developer-Quiz/blob/main/README.md#contribution)
 
 
 [![GitHub issues](https://img.shields.io/github/issues/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/issues)
@@ -55,6 +55,18 @@ And of course Developer Quiz-App itself is open source with a [public repository
 - Use this link to download the app  
 - [DOWNLOAD APP](https://www.mediafire.com/file/dedsyzki870kzsv/Developer_Quiz.apk/file)
 
+## Attributes
+
+Thank you for providing the images from your sources 
+
+
+- <a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Roundicons - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Freepik - Flaticon</a>
+
+- <a href="https://iconscout.com/icons/javascript" target="_blank">Javascript Icon</a> by <a href="https://iconscout.com/contributors/maninderkaur" target="_blank">maninderkaur</a>
+- <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
+
+
 <br>
 
 # Contribution 
@@ -78,15 +90,4 @@ And of course Developer Quiz-App itself is open source with a [public repository
 - Refer to <a href="CONTRIBUTING.md">Contributing Guide</a><br>
 - Don't forget to follow [@Suryansh1720001](https://github.com/Suryansh1720001) ⭐😊
 
-
-## Attributes
-
-Thank you for providing the images from your sources 
-
-
-- <a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Roundicons - Flaticon</a>
-- <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Freepik - Flaticon</a>
-
-- <a href="https://iconscout.com/icons/javascript" target="_blank">Javascript Icon</a> by <a href="https://iconscout.com/contributors/maninderkaur" target="_blank">maninderkaur</a>
-- <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
 
