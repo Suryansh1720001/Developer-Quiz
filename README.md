@@ -1,6 +1,8 @@
 ![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=100&section=footer&text=Developer+Quiz&fontSize=50)
 
 
+
+
 [![GitHub issues](https://img.shields.io/github/issues/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/issues)
 [![GitHub forks](https://img.shields.io/github/forks/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/network)
 [![GitHub stars](https://img.shields.io/github/stars/Suryansh1720001/Developer-Quiz?style=for-the-badge&logo=appveyor)](https://github.com/Suryansh1720001/Developer-Cheatsheet/stargazers)
@@ -52,6 +54,30 @@ And of course Developer Quiz-App itself is open source with a [public repository
 
 - Use this link to download the app  
 - [DOWNLOAD APP](https://www.mediafire.com/file/dedsyzki870kzsv/Developer_Quiz.apk/file)
+
+<br>
+
+# Contribution 
+
+## 🧑‍💻 About the Maintainer
+
+| Maintainer   | 
+| :----------: | 
+|<a href="https://github.com/Suryansh1720001"><img src="https://avatars.githubusercontent.com/Suryansh1720001" width=150px height=150px /></a><br>Suryansh Prajapati<br><a href="https://www.linkedin.com/in/itssuryansh/"><img src="https://t0.gstatic.com/images?q=tbn:ANd9GcRMCA3j2A8hfLl9p5UAU5nd9lvqLlNZvqoU4xOsZ192uH4IYS6X" width="32px" height="32px"></a> |
+<br>
+
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
+
+<br>
+
+
+## Want to Contribute😎:
+- Refer to <a href="CONTRIBUTING.md">Contributing Guide</a><br>
+- Don't forget to follow [@Suryansh1720001](https://github.com/Suryansh1720001) ⭐😊
+
 
 ## Attributes
 
